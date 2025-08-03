@@ -1,0 +1,18 @@
+{
+  "buildCommand": "echo 'No build required'",
+  "outputDirectory": ".",
+  "devCommand": "echo 'Dev mode'",
+  "installCommand": "npm install",
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs18.x",
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
